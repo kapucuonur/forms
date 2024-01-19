@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1>Formlar</h1>
+    <form action="./result.html" method="get">
+        <!-- label ve text input kullanimi-->
+        <div>
+
+            <label for="name">name</label>
+            <input type="text id=name" name="kullanici adi" placeholder="please enter your name">
+            <br>
+            <label for="familyname">familyname</label>
+            <input type="text" id="familyname" name="kullanici soyadi" placeholder="pleaseneter your family name">
+
+        </div>
+
+        <!--email-->
+        <div>
+            <label for="email">email</label>
+            <input type="email" id="email" placeholder="pleaseenter your email">
+        </div>
+
+        <!--ratio-->
+
+        <div>
+            <p>gender:</p>
+            <label for="gender1">male</label>
+            <input type="ratio" id="gender1" name="cinsiyet" value="man">
+            <label for="gender2">female</label>
+            <input type="ratio" id="gender2" name="cinsiyet" value="women">
+        </div>
+
+        <!--check box-->
+
+        <div>
+            <span>what is your favorite animal?</span>
+
+            <input type="checkbox" id="panda" name="anima1l" value="panda">
+            <label for="panda">panda</label>
+            <input type="checkbox" id="fish" name="animal2" value="fish">
+            <label for="fish">fish</label>
+            <input type="checkbox" id="horse" name="animal3" value="horse">
+            <label for="fish">fish</label>
+        </div>
+        <!--number-->
+        <div>
+            <label for="age">age</label>
+            <input type="number" name="kullanicinin yasi" id="age" step="5">
+        </div>
+
+        <!--color-->
+
+        <div>
+            <label for="color">choose a color</label>
+            <input type="color" id="color" name="secilen renk">
+        </div>
+
+        <!--date-->
+        <div>
+            <label for="date">date</label>
+            <input type="date" id="date" name="date" min="2022-12-18" max="2024-01-31"
+        </div>
+
+        <!--file-->
+
+        <div>
+            <label for="file">upload file</label>
+            <input type="file" id="file" name="choosen file">
+        </div>
+        <!--phone-->
+        <div>
+            <label for="tel">phone</label>
+            <input type="tel" name phone number id="tel" placeholder="xxx-xxx-xx-xx" value="0">
+        </div>
+
+        <!-- selected-->
+
+        <div>
+            <label for="dessert">dessert</label>
+            <br>
+            <select name="choosen food" id="food" size="4 multible">
+                <option value="kebab">kebab</option>
+                <option value="pizza">pizza</option>
+                <option value="siipi">siipi</option>
+                <option value="hamburger">hamburger</option>
+            </select>
+
+        </div>
+        <hr>
+        <div>
+            <label for="seker2">Hangi tatlıyı seversiniz:</label>
+            <br>
+            <select name="tatlılar" id="seker2" size="10" multiple>
+                <optgroup label="Sütlü tatlılar">
+                    <option value="Sütlaç">Sütlaç</option>
+                    <option value="Keşkül">Keşkül</option>
+                    <option value="Süpangle">Süpangle</option>
+                    <option value="Magnolia">Magnolia</option>
+                </optgroup>
+
+                <optgroup label="şerbetli tatlılar">
+                    <option value="Künefe">Kaymaklı künefe</option>
+                    <option value="Baklava">Baklava</option>
+                    <option value="Şekerpare">Şekerpare</option>
+                    <option value="Hayrabolu">Hayrabolu</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <!--text area-->
+        <div>
+                <label for="comment">comment</label> <br>
+                <input type="text" name="user_browser" id="input-browser" list="bowser">
+                
+                <datalist id="browser">
+                    <option value="Chrome"></option>
+                    <option value="Firefox"></option>
+                    <option value="Safari"></option>
+                    <option value="Opera"></option>
+                    <option value="Brave"></option>
+                </datalist>
+        </div>
+
+        <br>
+        <div>
+            <fieldset>
+                <legend>personal informations</legend>
+                <label for="">ad:</label>
+                <input type="text" name="name" placeholder="name..."
+                <br><br>
+                <label for="">familyname:</label>
+            
+                <input type="text" name="familyname" placeholder="=familyname...">
+                
+            </fieldset>
+        </div>
+
+
+    </form>
+</body>
+</html>
